@@ -14,8 +14,9 @@ export default defineConfig(({ mode }) => {
       },
     },
     server: {
-      host: '0.0.0.0', // Required for Render to detect open port
-      port: 10000      // Use a fixed port so Render can scan it
+      host: '0.0.0.0',
+      port: 10000,
+      allowedHosts: ['.onrender.com']
     }
   };
 });
